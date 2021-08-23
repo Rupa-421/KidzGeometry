@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete - KidzGeometry</title>
+    <style>
+        .flex{
+        display:flex;
+        flex-direction:row;
+        }
+    </style>
+</head>
+<body>
+<h2>Are you sure you want to delete {{item}}?</h2>
+<div class="flex"><div>
+<a href="{% url 'home' %}">Cancel</a>
+&emsp;
+    </div>
+        <div class="input-group">
+<form method="POST" action="">
+    {% csrf_token %}
+    <input type="submit" name="Confirm">
+</form>
+        </div>
+    </div>
+</body>
+</html>

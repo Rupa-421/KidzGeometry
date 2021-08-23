@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home - KidzGeometry</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    h1
+    {
+    margin:10px 0px 10px 10px;
+    padding:25px;
+    }
+    h2
+    {
+    margin:0px 5px 10px 10px;
+    padding:25px;
+    }
+    div
+    {
+    width:250px;
+    height:200px;
+    margin:25px;
+    padding:25px;
+    border-radius:25px;
+    border:3px solid blue;
+    }
+</style>
+
+</head>
+<body>
+{% if user.is_authenticated %}
+<h3>Hello ,{{user.username}}</h3>
+<a href="user/logout">Logout</a>
+{% else %}
+<li><a href="user/login">Login</a></li>
+<li><a href="user/register">Register</a></li>
+{% endif %}
+<h1>KidzGeometry</h1>
+<h2>Explore our tools here</h2>
+<div>
+    <h3>Listen to your english textbook here</h3>
+<a href="/listen" class="btn btn-info" role="button">listen</a>
+</div>
+<div>
+    <h3>Explore more opportunities</h3>
+    <a href="/explore" class="btn btn-info" role="button">Explore</a>
+
+</div>
+<div>
+    <h3>Find assistance to your project work here</h3>
+    <a href="/project" class="btn btn-info" role="button">ProjectAssistance</a>
+</div>
+</body>
+</html>
