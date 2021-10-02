@@ -5,7 +5,6 @@ import pyttsx3
 from datetime import date
 from django.shortcuts import render,redirect
 import urllib.request
-import numpy as np
 import cv2
 from django.http import HttpResponse
 import django.core.files
