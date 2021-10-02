@@ -14,7 +14,7 @@ from django.contrib import messages
 from .models import *
 # Create your views here.
 def home(request):
-    return render(request,'home\index.html')
+    return render(request,'home/index.html')
 def listen(request):
     if request.method=='POST' and request.FILES['file']:
         file=request.FILES['file'].read()
