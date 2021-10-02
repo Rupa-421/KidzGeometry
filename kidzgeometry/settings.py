@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-g*r-_#a8l$z@-pbx_^xq-et4#&3+@ezgs6o_ocrl(2fchh)r53'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kidzgeometry.herokuapp.com', 'localhost', '127.0.0.1']
 
 CRISPY_TEMPLATE_PACK='bootstrap3'
 # Application definition
