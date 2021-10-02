@@ -57,7 +57,7 @@ def add(request):
                 print("todays date is ",date.today()>crctdate)
         reform = ApplicationForm(request.POST)
         user=reform.save()
-        return redirect('/add')
+        return redirect('/')
     form=ApplicationForm()
     return render(request,'home/add.html',{'form':form})
 def delete(request,pk):
