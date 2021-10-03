@@ -6,6 +6,7 @@ from datetime import date
 from django.shortcuts import render,redirect
 import urllib.request
 import cv2
+import numpy as np
 from django.http import HttpResponse
 import django.core.files
 from django.http import HttpResponse
@@ -108,7 +109,7 @@ def project(request):
             except:
                 continue
             if image is not None:
-                text = "C:/Users/admin/" + val + str(count) + ".jpg"
+                text =val + str(count) + ".jpg"
                 cv2.imwrite(text, image)
                 count += 1
         return redirect('/')
