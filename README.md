@@ -15,7 +15,7 @@
  
 :rocket: <b>Installation</b>
 
-  - Clone the repo 
+  - Clone the [repo](https://github.com/Rupa-421/KidzGeometry)
  ```
   $ git clone https://github.com/Rupa-421/KidzGeometry.git
   ```
