@@ -39,5 +39,5 @@ $ pip3 install -r requirements.txt
 ```
 $ python manage.py runserver.
 ```
-:tv: Here is the livelink (currently under maintenance limited features available on deployed version):
-https://kidzgeometry.herokuapp.com/
+:tv: Here is the [livelink](https://kidzgeometry.herokuapp.com/) (currently under maintenance limited features available on deployed version):
+
