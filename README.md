@@ -11,7 +11,7 @@
 
 :key: <b>Prerequisites</b>
  
- All the dependencies and required libraries are included in the file requirements.txt 
+ All the dependencies and required libraries are included in the file [requirements.txt](requirements.txt)
  
 :rocket: <b>Installation</b>
 
