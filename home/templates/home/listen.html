@@ -9,6 +9,12 @@
     body{
     margin:15px;
     }
+    *{
+font-family:ComicSans;
+}
+    .alert{
+    margin:10px;
+    }
 </style>
 </head>
 <body>
@@ -23,7 +29,7 @@
 </form>
 <div>
     {% for message in messages %}
-    <h3>{{message}}</h3>
+    <div class="alert alert-warning" role="alert">{{message}}</div>
     {% endfor %}
 </div>
 </body>

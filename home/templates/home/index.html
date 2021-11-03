@@ -6,6 +6,9 @@
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <style>
+*{
+font-family:ComicSans;
+}
     h1
     {
     margin:10px 0px 10px 10px;
@@ -16,14 +19,22 @@
     margin:0px 5px 10px 10px;
     padding:25px;
     }
-    div
-    {
+    #oppor,#listen,#project
+    #oppur,#project,#listen{
     width:250px;
     height:200px;
-    margin:25px;
     padding:25px;
     border-radius:25px;
     border:3px solid blue;
+    margin:10px;
+    }
+    .container1{
+      font-family: arial;
+  font-size: 24px;
+  width: 100%;
+  height: 500px;
+  /* Setup */
+  position: relative;
     }
 </style>
 
@@ -33,23 +44,40 @@
 <h3>Hello ,{{user.username}}</h3>
 <a href="user/logout">Logout</a>
 {% else %}
-<li><a href="user/login">Login</a></li>
-<li><a href="user/register">Register</a></li>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand" href="#" style="color:white">KidzGeometry</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav" >
+      <a class="nav-item nav-link active" href="#">Home</a>
+      <a class="nav-item nav-link" href="user/login">Login</a>
+      <a class="nav-item nav-link" href="user/register">Register</a>
+    </div>
+  </div>
+</nav>
+
+
 {% endif %}
 <h1>KidzGeometry</h1>
 <h2>Explore our tools here</h2>
-<div>
-    <h3>Listen to your english textbook here</h3>
+<div class="container1">
+    <div class="child1">
+<div id="listen" style="display:inline-block">
+    <h3>Listen to textbook </h3>
 <a href="/listen" class="btn btn-info" role="button">listen</a>
 </div>
-<div>
-    <h3>Explore more opportunities</h3>
+<div id="oppor" style="display:inline-block">
+    <h3>Explore opportunities</h3>
     <a href="/explore" class="btn btn-info" role="button">Explore</a>
-
 </div>
-<div>
-    <h3>Find assistance to your project work here</h3>
+    </div>
+<div id="project" style="display:block">
+    <h3>Project assistance</h3>
     <a href="/project" class="btn btn-info" role="button">ProjectAssistance</a>
+</div>
+</div>
 </div>
 </body>
 </html>

@@ -8,20 +8,31 @@
         body{
         margin:15px;
         }
+        label{
+        float:left;
+        text-align:right;
+        margin-right:15px;
+        width:100px;
+        }
+        *{
+font-family:ComicSans;
+}
     </style>
 </head>
 <body>
 <form action="" method="post">
     {% csrf_token %}
-    Username: <input type="text" name="username" placeholder="username"></br><pre></pre>
-    Email:<input type="email" name="email" placeholder="email"></br><pre></pre>
-    Password:<input type="password" name="password" placeholder="password"></br><pre></pre>
-    Confirm password:<input type="password" name="cpassword" placeholder="confirm_password"></br><pre></pre>
+   <label>Username</label><input type="text" name="username" placeholder="username"></br><pre></pre>
+    <label>Email-id</label><input type="email" name="email" placeholder="email"></br><pre></pre>
+    <label>Password</label><input type="password" name="password" placeholder="password"></br><pre></pre>
+    <label>Confirm password</label><input type="password" name="cpassword" placeholder="confirm_password"></br><pre></pre>
     <input type="submit" class="btn btn-success">
 </form>
 <div>
     {% for message in messages %}
-    <h3>{{message}}</h3>
+    <div class="alert alert-warning" role="alert">
+        {{message}}
+    </div>
     {% endfor %}
 </div>
 </body>

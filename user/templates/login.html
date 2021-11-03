@@ -8,13 +8,22 @@
         body{
         margin:15px;
         }
+        label{
+        float:left;
+        text-align:right;
+        margin-right:15px;
+        width:100px;
+        }
+        *{
+font-family:ComicSans;
+}
     </style>
 </head>
 <body>
 <form action="" method="post">
     {% csrf_token %}
-    Username:<input type="text" name="username"></br><pre></pre>
-    Password:<input type="password" name="password"></br><pre></pre>
+    <label>Username</label><input type="text" name="username"></br><pre></pre>
+   <label>Password </label><input type="password" name="password"></br><pre></pre>
     <input type="submit" class="btn btn-success">
 </form>
 <div>
